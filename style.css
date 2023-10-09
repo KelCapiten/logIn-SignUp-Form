@@ -1,0 +1,124 @@
+
+:root {
+    --bh-color: rgb(47, 78, 134);
+    --gb--color: linear-gradient(to top, rgb(255, 166, 0), #ffae19, #ffcf31);
+}
+
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.bg {
+    background: var(--gb--color);
+}
+
+.container {
+    display: flex;
+}
+
+.formDiv {
+    height: 100vh;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.logInForm {
+    min-width: 16vw;
+    min-height: 52vh;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.logInForm::before {
+    content: '';
+    background: url(imgs/_ee2f3ba7-97ac-4f59-a6fc-2a404edfd99e.jpg);
+    position: absolute;
+    inset: 0;
+    border-radius: .6rem;
+    filter: brightness(10%);
+    opacity: 90%;
+    backdrop-filter: blur(1rem);
+
+}
+
+.formHeading {
+    text-align: center;
+    font-size: larger;
+    isolation: isolate;
+    color: white;
+}
+
+.detailsSection {
+    padding-bottom: 8vh;
+    isolation: isolate;
+    color: white;
+    background: rgba(255, 255, 255, 0.267);
+    backdrop-filter: blur(1rem);
+}
+
+input {
+    height: 2rem;
+    min-width: 100%;
+    border-radius: .2rem;
+    border: solid 1px rgb(255, 255, 255);
+}
+
+.passwordSection {
+    padding-top: 1rem;
+}
+
+a {
+   padding-left: 1rem;
+   color: white;
+}
+
+a:hover {
+    color: #ffcf31;
+}
+.buttonArea {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-top: 1.3rem;
+    padding-right: .9rem;
+    isolation: isolate;
+
+}
+
+button {
+    width: 5rem;
+    height: 2.4rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    border: 1px solid black;
+    background: rgb(0, 255, 21);
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.regContainer {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background: whitesmoke;
+}
+
+.regDiv {
+    flex: 1;
+    background: rgba(235, 235, 235, 0.151);
+    height: 50vh;
+    box-shadow: 0px 0px 50px 1px rgb(207, 209, 195);
+    padding-left: 5rem;
+    padding-top: 3rem;
+}
+
+.regInfo {
+    display: flex;
+    gap: 5rem;
+}
+
+.regInfoInput {
+    width: 15rem;
+}
