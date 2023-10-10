@@ -1,7 +1,7 @@
 
 :root {
     --bh-color: rgb(47, 78, 134);
-    --gb--color: linear-gradient(to top, rgb(255, 166, 0), #ffae19, #ffcf31);
+    --gb--color: url(./imgs/unsplash.jpg)
 }
 
 * {
@@ -10,6 +10,8 @@
 
 .bg {
     background: var(--gb--color);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -63,6 +65,18 @@ input {
     min-width: 100%;
     border-radius: .2rem;
     border: solid 1px rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input:focus {
+    box-shadow: 0.5px 0.5px 5px 0.2px rgb(36, 48, 70);
+    outline: solid 1px rgb(160, 248, 29);
+    border: solid 1px rgb(160, 248, 29);
+}
+
+input:hover {
+    box-shadow: 0px 0px 1px 1px rgb(204, 223, 255);
 }
 
 .passwordSection {
@@ -71,16 +85,15 @@ input {
 
 a {
    padding-left: 1rem;
-   color: white;
+   color: rgb(255, 255, 255);
 }
 
 a:hover {
-    color: #ffcf31;
+    color: rgb(255, 229, 159);
 }
 .buttonArea {
     display: flex;
     justify-content: flex-end;
-    gap: 1rem;
     padding-top: 1.3rem;
     padding-right: .9rem;
     isolation: isolate;
@@ -88,30 +101,38 @@ a:hover {
 }
 
 button {
-    width: 5rem;
-    height: 2.4rem;
+    padding: 0.7rem 2rem;
     border-radius: .4rem;
     cursor: pointer;
-    border: 1px solid black;
-    background: rgb(0, 255, 21);
+    border: 1px solid rgb(35, 130, 255);
+    background: rgb(35, 130, 255);
+    color: whitesmoke;
     font-weight: bold;
+    font-size: large;
     letter-spacing: 1.5px;
 }
 
+button:hover {
+    background: rgb(33, 116, 226);
+}
+
+button:focus {
+    background: rgb(28, 95, 184);
+}
+
 .regContainer {
-    display: flex;
-    align-items: center;
     flex: 1;
+    padding-top: 25vh;
     background: whitesmoke;
 }
 
 .regDiv {
     flex: 1;
     background: rgba(235, 235, 235, 0.151);
-    height: 50vh;
+    height: 40vh;
     box-shadow: 0px 0px 50px 1px rgb(207, 209, 195);
     padding-left: 5rem;
-    padding-top: 3rem;
+    padding-top: 1rem;
 }
 
 .regInfo {
@@ -122,3 +143,9 @@ button {
 .regInfoInput {
     width: 15rem;
 }
+
+.submit {
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+
